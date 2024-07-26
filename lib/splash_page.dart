@@ -38,7 +38,7 @@ class _SplashPageState extends State<SplashPage>
   }
 
   Future<void> _navigateToNextScreen() async {
-    await Future.delayed(const Duration(seconds: 5)); // Simulate a longer delay
+    await Future.delayed(const Duration(seconds: 5));
     final prefs = await SharedPreferences.getInstance();
     final bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
 
